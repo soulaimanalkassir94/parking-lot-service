@@ -14,5 +14,5 @@ import lombok.Setter;
 @EnableConfigurationProperties
 @ConfigurationProperties
 public class YamlProperties {
-	private Map<String, Map<String, String>> trianelparkinglots;
+	private Map<String, Map<String, String>> parkinglots;
 }
