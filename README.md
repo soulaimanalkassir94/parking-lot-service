@@ -26,6 +26,7 @@ TBD
 ## Initial setup of a new service
 
 Open the properties.yaml and under parkinglot enter the following information in the correct way:
+ ```
   parkinglots:
     service_1:
      pakinglot: (queue name)
@@ -38,7 +39,7 @@ Open the properties.yaml and under parkinglot enter the following information in
      exchange: (exchange name)
      routingkey: (routingkey)
         ....
-        
+       ``` 
 ```
 
 ## Running from the IDE
