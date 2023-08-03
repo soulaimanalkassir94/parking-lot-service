@@ -1,16 +1,7 @@
 
-# ConfigDemoService
+# ParkinglotService
 
-This service is a demo for cloud config values and has no productive use (just for testing).
-
-Copy the file "config-demo-service.yml" into your cloud-config and call swagger ui for endpoints:
-http://localhost:8090/swagger-ui/index.html#/
-
-or directly the 4 endpoints:
-http://localhost:8090/config-demo-service/v1/config/value1
-http://localhost:8090/config-demo-service/v1/config/value2
-http://localhost:8090/config-demo-service/v1/config/value3
-http://localhost:8090/config-demo-service/v1/config/value4
+The Service is responsible for receiving incorrect message sthat are sent to the parkinglot-queue, and then save them for correction and resend to the original exchange.
 
 ## Getting Started
 
@@ -34,22 +25,20 @@ TBD
 
 ## Initial setup of a new service
 
-When a new service is being created these steps should be followed:
-
-* Fork *application-seed-java* repository into a new repository with the name of the new service.
-* Change \<artifactId>, \<name> and \<description> in pom.xml according to the new service.
-* Change *logger.rabbitmq.application.id* in logger.rabbitmq.application.id with the id of the new service.
-* Change *spring.application.name* in application.properties with the name of the new service.
-* Create under *com.trianel* a package with the name of the service and all other packages should be children of this package.<br/>Example:
- 
-```
-    • com.trianel.<service name>
-        ◦ com.trianel.<service name>.configs
-        ◦ com.trianel.<service name>.converters
-        ◦ com.trianel.<service name>.logging
-        ◦ com.trianel.<service name>.models
-        ◦ com.trianel.<service name>.rabbitmq
-        ◦ com.trianel.<service name>.services
+Open the properties.yaml and under parkinglot enter the following information in the correct way:
+  parkinglots:
+    service_1:
+     pakinglot: (queue name)
+     servicename: (service name)
+     exchange: (exchange name)
+     routingkey: (routingkey)
+    service_2:
+     pakinglot: (queue name)
+     servicename: (service name)
+     exchange: (exchange name)
+     routingkey: (routingkey)
+        ....
+        
 ```
 
 ## Running from the IDE
@@ -110,8 +99,7 @@ Cleanup step will remove all produced images carrying with label "name" equal to
 
 ## Authors
 
-* **Soulaiman Alkassir** - [vladimir.bahnev@scalefocus.com](mailto:vladimir.bahnev@scalefocus.com)
-* **Nikolay Petrov** - [niki.petrov@scalefocus.com](mailto:niki.petrov@scalefocus.com)
+* **Soulaiman Alkassir** - [soulaimanalkassir@gamil.com](mailto:soulaimanalkassir@gamil.com)
 
 ## Acknowledgments
 
