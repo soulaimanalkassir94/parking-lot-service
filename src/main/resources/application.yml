@@ -1,0 +1,32 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: config-demo-service
+  data:
+   mongodb:
+    host: localhost
+    port: 27017
+    database: parking-lot
+    repositories:
+     enabled: true
+  mvc:
+   view:
+    prefix: /WEB-INF/views/
+    suffix: .jsp
+trianelparkinglots:
+ orderservice: 
+  parkinglot: "parkinglot-order.queue1"
+  servicename: "order-service1"
+  destinationexchange: "input.order.exchange1"
+  destinationroutingkey: "1"
+ orderservice1: 
+  parkinglot: "parkinglot-order.queue2"
+  servicename: "order-service2"
+  destinationexchange: "input.order.exchange2"
+  destinationroutingkey: "2"
+ orderservice2: 
+  parkinglot: "parkinglot-order.queue3"
+  servicename: "order-service3"
+  destinationexchange: "input.order.exchange3"
+  destinationroutingkey: "#3"

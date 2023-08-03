@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.3</version>
+    </parent>
+    <groupId>com.trianel.configdemo</groupId>
+    <artifactId>config-demo-service</artifactId>
+    <version>1.1.0-SNAPSHOT</version>
+    <name>Config Demo Service</name>
+    <description>Demonstration for config values via cloud config</description>
+
+    <properties>
+        <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <docker.registry.address>127.0.0.1:5000</docker.registry.address>
+
+        <springdoc.version>1.6.6</springdoc.version>
+        <consul.discovery.version>3.1.0</consul.discovery.version>
+        <cloud.config.version>3.1.1</cloud.config.version>
+        <cloud.bus.amqp.version>3.1.0</cloud.bus.amqp.version>
+        <cloud.bootstrap.version>3.1.1</cloud.bootstrap.version>
+        <aspectjweaver.version>1.9.7</aspectjweaver.version>
+        <logstash.encoder.version>7.0.1</logstash.encoder.version>
+        <lombok.version>1.18.22</lombok.version>
+        <okhttp3.version>4.10.0</okhttp3.version>
+
+        <sonar.coverage.exclusions>
+            src/main/java/com/trianel/configdemo/Application.java,
+        </sonar.coverage.exclusions>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>${springdoc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjweaver.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+
+    </build>
+</project>

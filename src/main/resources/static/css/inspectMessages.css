@@ -1,0 +1,116 @@
+@charset "ISO-8859-1";
+
+body, html{
+	padding: 0;
+	margin: 0;
+}
+.bg {
+    background-image: url("../images/trianel-building.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.title-div{
+	left: 50%;
+	transform: translate(-50%);
+	min-height: 155px;
+	max-height: 155px;
+	min-width: 700px;
+	max-width: 700px;
+	background-color: rgb(254, 254, 254);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: 7px;
+	position: relative;
+}
+.title{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color: rgb(190, 23, 43);
+}
+.subtitle{
+	font-size: 15px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+	color: rgb(190, 23, 43);	
+}
+.logo{
+	left: 5px;
+	top: 150px;
+	padding-right: 10px;
+	transform: translate(0, -100%);
+	width: 15%;
+	height: auto;
+	position: fixed;
+}
+
+
+.filtered-message-form{
+	min-width: 700px;
+	max-width: 700px;
+	height: fit-content;
+	width: 50%;	
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	background-color: rgb(212, 213, 209);
+	border-radius: 5px;
+	padding-bottom: 5px ;
+}
+
+ul{
+	padding-top: 10px;
+	padding-left: 5px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+li{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 15px;
+	list-style: none;
+}
+
+.filteredMessage{
+	height: fit-content;
+	position: relative;
+	left: 50%;
+	text-align: left;
+	transform: translate(-50%);
+	background-color: rgb(254, 254, 254);
+	border-radius: 5px;
+	padding-bottom: 3px ;
+	text-align: left;
+	
+}
+
+pre{
+	width: 100%;
+	display: inline-block;
+	text-align: left;
+	font-size: 15px;
+	font-family: 'Courier New', Courier, monospace;
+	overflow-x: auto;
+	padding: 10px;
+}
+
+.message{
+	height: fit-content;
+	width: fit-content;
+}
+
+.submit_button{
+	border: none;
+	position: relative;
+	left: 50%;
+	margin-top: 10px;
+	transform: translate(-50%);
+	bottom: 5px;
+	padding: 7px;
+	font-family: 'Courier New', Courier, monospace;
+	border-radius: 5px;
+	color: rgb(254, 254, 254);
+	background-color: rgb(190, 23, 43);
+}
