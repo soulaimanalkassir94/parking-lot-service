@@ -14,7 +14,7 @@ spring:
    view:
     prefix: /WEB-INF/views/
     suffix: .jsp
-trianelparkinglots:
+parkinglots:
  orderservice: 
   parkinglot: "parkinglot-order.queue1"
   servicename: "order-service1"
