@@ -1,3 +1,4 @@
+
 # ConfigDemoService
 
 This service is a demo for cloud config values and has no productive use (just for testing).
@@ -109,9 +110,10 @@ Cleanup step will remove all produced images carrying with label "name" equal to
 
 ## Authors
 
-* **Vladimir Bahnev** - [vladimir.bahnev@scalefocus.com](mailto:vladimir.bahnev@scalefocus.com)
+* **Soulaiman Alkassir** - [vladimir.bahnev@scalefocus.com](mailto:vladimir.bahnev@scalefocus.com)
 * **Nikolay Petrov** - [niki.petrov@scalefocus.com](mailto:niki.petrov@scalefocus.com)
 
 ## Acknowledgments
 
 TBD
+=======
